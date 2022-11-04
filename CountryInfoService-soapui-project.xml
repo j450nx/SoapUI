@@ -7,7 +7,7 @@
   <con:entry key="Save After" value="false"/>
   <con:entry key="Add Settings" value="false"/>
   <con:entry key="WSS Password Type" value=""/>
-  <con:entry key="TestSuite" value="TestSuite3"/>
+  <con:entry key="TestSuite" value="TestSuite2"/>
   <con:entry key="Endpoint" value=""/>
   <con:entry key="Select Report Type" value=""/>
   <con:entry key="System Properties" value=""/>
@@ -25,7 +25,7 @@
   <con:entry key="Environment" value="Default"/>
   <con:entry key="Coverage Report" value="false"/>
   <con:entry key="Enable UI" value="false"/>
-  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Root Folder" value="C:\Users\j450n\Desktop"/>
   <con:entry key="Ignore Errors" value="false"/>
   <con:entry key="Domain" value=""/>
   <con:entry key="Tool Args" value=""/>
@@ -1134,7 +1134,7 @@
    <soapenv:Body>\r
       <web:ListOfLanguagesByName/>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfLanguagesByNameRequest"/></con:call></con:operation></con:interface><con:testSuite id="6e1117df-a205-455b-800b-1871d45bcd4b" name="TestSuite1"><con:settings/><con:runType>PARALLELL</con:runType><con:testCase id="f5f7e39a-77b1-4939-9532-1cc58e05eb99" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CapitalCity TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="487a4a93-edd5-4cd6-9081-2b5c0a63c583" name="CapitalCity"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CapitalCity</con:operation><con:request name="CapitalCity" id="5373e12d-cea7-4f8d-83d1-f7e51892a75c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/ListOfLanguagesByNameRequest"/></con:call></con:operation></con:interface><con:testSuite id="6e1117df-a205-455b-800b-1871d45bcd4b" name="TestSuite1"><con:settings/><con:runType>PARALLELL</con:runType><con:testCase id="f5f7e39a-77b1-4939-9532-1cc58e05eb99" failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CapitalCity TestCase" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="request" id="487a4a93-edd5-4cd6-9081-2b5c0a63c583" name="CapitalCity"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>CountryInfoServiceSoapBinding</con:interface><con:operation>CapitalCity</con:operation><con:request name="CapitalCity" id="5373e12d-cea7-4f8d-83d1-f7e51892a75c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <web:CapitalCity>\r
@@ -1501,7 +1501,7 @@ context.Hello.sayHello("Jason")</script></con:config></con:testStep><con:testSte
          <web:sCountryName>${#TestCase#CountryName}</web:sCountryName>\r
       </web:CountryISOCode>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="7c552e75-140e-4ab5-b2cf-415a11b0f8a5" name="Contains"><con:configuration><token>AX</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryISOCodeRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="3a024031-f1d0-4a72-bae7-77a30edf2831"><con:settings/><con:config><script>// calling teststep from the same testcase
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="7c552e75-140e-4ab5-b2cf-415a11b0f8a5" name="Contains"><con:configuration><token>AX</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.oorsprong.org/websamples.countryinfo/CountryInfoServiceSoapType/CountryISOCodeRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="RunTestCase" id="3a024031-f1d0-4a72-bae7-77a30edf2831"><con:settings/><con:config><script>// calling teststep from the same testcase
 def status = testRunner.runTestStepByName("CountryISOCode")
 log.info(" >>> " + status)
 def result = status.getStatus().toString();
@@ -1520,7 +1520,14 @@ testStep = testCase.getTestStepByName("GetCountryISOCode")
 def newStatus = testStep.run(testRunner, context)
 def newResult = newStatus.getStatus().toString();
 log.info(" >>> result from another test case " + newResult)
-</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5e9d00d6-0f14-4fc6-a3b1-642decdafb8f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase4" searchProperties="true"><con:settings/><con:testStep type="groovy" name="RunTestCase" id="7a4b34c5-5af8-4c74-8a7c-7741dc288fe2"><con:settings/><con:config><script>def testCase = testRunner.testCase.testSuite.testCases["TestCase2"];
+</script></con:config></con:testStep><con:testStep type="groovy" name="RunTestSuite" id="4efcbf51-124d-4f00-bd8b-6dc7fa8af752"><con:settings/><con:config><script>def suite = context.testCase.testSuite.project.testSuites["TestSuite2"];
+// null is property, false is synchronous
+suite.run(null, false);
+
+log.info("      >>>      " + suite.getName().toString() + " - Executed Successfully")</script></con:config></con:testStep><con:testStep type="groovy" name="RunTestProject" id="7d96a1a3-41a7-4e61-9fb0-b3c8f4448f66"><con:settings/><con:config><script>def projectName = testRunner.getTestCase().getTestSuite().getProject().getWorkspace().getProjectByName("REST Project 1");
+def runStatus = projectName.run(null, true);
+Thread.sleep(5000);
+log.info("     >>>     status is: " + runStatus.getStatus().toString());</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5e9d00d6-0f14-4fc6-a3b1-642decdafb8f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase4" searchProperties="true"><con:settings/><con:testStep type="groovy" name="RunTestCase" id="7a4b34c5-5af8-4c74-8a7c-7741dc288fe2"><con:settings/><con:config><script>def testCase = testRunner.testCase.testSuite.testCases["TestCase2"];
 def prop = new com.eviware.soapui.support.types.StringToObjectMap();
 runner = testCase.run(prop, false);
 
